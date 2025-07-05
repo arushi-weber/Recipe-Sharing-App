@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title><%= recipe.title %> - Recipe</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/recipe.css">
 </head>
 <body>
   <div class="recipe-box">
-    <h2><%= recipe.title %></h2>
+    <h1><%= recipe.title %></h1>
     <p> Description: <%= recipe.description %> </p>
     <p> Ingredients: <%= recipe.ingredients %> </p>
     <p> Steps: <%= recipe.steps %> </p>
+    <a href="http://localhost:3000/recipes">Back</a>
   </div>
 </body>
 </html>

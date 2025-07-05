@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Delicious Recipes</h1>
+    <div class="recipe-container">
     <% for (recipe of recipes) { %>
     <div class="recipe-box">
     <h3> <%= recipe.title %></h3>
@@ -23,6 +24,7 @@
     
     </div>
     <% } %>
+    </div>
     <br><br>
     <div class="add-link">
     <a href="/recipes/new">Add Recipe</a>

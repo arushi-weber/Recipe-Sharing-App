@@ -1,0 +1,73 @@
+/* edit.css - Create Recipe Page */
+
+body {
+  margin: 0;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/image.jpeg'); /* Ensure this image exists in your public directory */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+h2 {
+  color: #ffb74d;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.form-box {
+  background-color: rgba(28, 28, 28, 0.92);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  width: 90%;
+  max-width: 600px;
+}
+
+label {
+  font-weight: bold;
+  color: #ff9800;
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Recipe</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/edit.css">
 </head>
 <body>
     <form method="POST" action="/recipes/<%= recipe.id %>?_method=PATCH">
@@ -21,6 +21,7 @@
   <textarea name="steps" rows="3" required><%= recipe.steps %></textarea><br><br>
 
   <button type="submit">Update Recipe</button>
+  <a href="http://localhost:3000/recipes">Back</a>
 </form>
 
 </body>
