@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Delicious Recipes</h1>
+    <% for (recipe of recipes) { %>
+    <div class="recipe-box">
+    <h3> <%= recipe.title %></h3>
+    <p> Description: <%= recipe.description %> </p>
+    <p> Ingredients: <%= recipe.ingredients %> </p>
+    <p> Steps: <%= recipe.steps %> </p>
+    <a href="/recipes/<%= recipe.id %>">Show</a>
+    <a href="/recipes/<%= recipe.id %>/edit">Edit</a>
+
+    <form method="POST" action="/recipes/<%= recipe.id %>?_method=DELETE" style="display:inline;">
+    <button type="submit" class="delete-btn">Delete</button>
+    </form>
+    
+    </div>
+    <% } %>
+    <br><br>
+    <div class="add-link">
+    <a href="/recipes/new">Add Recipe</a>
+    </div>
+
+</body>
+</html>

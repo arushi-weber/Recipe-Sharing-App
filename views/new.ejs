@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Recipe</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>Create a New Recipe</h2>
+
+  <div class="form-box">
+    <form method="POST" action="/recipes">
+      <label>Title:</label><br>
+      <input type="text" name="title" placeholder="Recipe title" required><br><br>
+
+      <label>Description:</label><br>
+      <textarea name="description" placeholder="Short description" rows="2" required></textarea><br><br>
+
+      <label>Ingredients :</label><br>
+      <input type="text" name="ingredients" placeholder="Flour, Sugar, etc." required><br><br>
+
+      <label>Steps :</label><br>
+      <textarea name="steps" placeholder="Mix, Bake, etc." rows="3" required></textarea><br><br>
+
+      <button type="submit">Add Recipe</button>
+    </form>
+  </div>
+</body>
+</html>
